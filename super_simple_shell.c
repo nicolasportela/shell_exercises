@@ -50,6 +50,7 @@ int main(void)
 			argv[i] = tok;
 			tok = strtok(NULL, " ");
 		}
+		argv[i] = NULL;
 
 		child_check = fork();
 		if (child_check == -1)
