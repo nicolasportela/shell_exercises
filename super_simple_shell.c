@@ -27,9 +27,9 @@ int main(void)
 		{
 			if (check == EOF)
 			{
+				write(1, "\n", 1);
 				free(argv);
 				free(command);
-				write(1, "\n", 1);
 				return (1);
 			}
 			perror("Error");
